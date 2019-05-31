@@ -15,6 +15,9 @@
     <ProjectName>TerminalSettings</ProjectName>
     <RootNamespace>Microsoft.Terminal.Settings</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="KeyChord.h">
@@ -47,7 +50,6 @@
     <None Include="packages.config" />
     <None Include="TerminalSettings.def" />
   </ItemGroup>
-
   <PropertyGroup>
     <!--
       DON'T REDIRECT OUR OUTPUT.
